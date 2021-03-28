@@ -1,6 +1,6 @@
 let spoons = 0
 let howMany = 1
-let spoonGrabPower = 90
+let spoonGrabPower = 1
 let spoonLevel = 1
 let spoonMakers = 0
 let spoonFactories = 0
