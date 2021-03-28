@@ -183,7 +183,7 @@ footer{
 .little-lower{
     position: fixed;
     width: 50vw;
-    top: 65%;
+    top: 60%;
     left: 25%;
     bottom: 0%;
     right: 25%;
@@ -191,12 +191,12 @@ footer{
 }
 
 .moon-spot{
-    width: 25rem;
+    width: 500px;
     cursor: pointer;
 }
 
 .spoon-spot{
-    width: 12rem;
+    width: 150px;
 }
 
 .moon-dance{
