@@ -2,7 +2,7 @@ let spoons = 0
 let howMany = 1
 let spoonGrabPower = 90
 let spoonLevel = 1
-let spoonMakers = 1
+let spoonMakers = 0
 let spoonFactories = 0
 let time = 2000
 
