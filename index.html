@@ -65,7 +65,7 @@
                     <div class="col shadow space-title-font p-4">
                         <h1 class="">SPOON MINER</h1>
                         <div class="secondary-t2">
-                            <span>Master-class Spoon Clicking Game</span>
+                            <span>Legendary Spoon Clicking Game</span>
                         </div>
                     </div>
                 </div>
@@ -73,12 +73,23 @@
         </header>
 
         <main class="">
-
             <div class="container-fluid shadow-lg">
+
+                <!--SPOON COUNT 1-->
+                <div class="row pb-1 pt-3">
+                    <div class="col d-flex justify-content-center space-title-font">
+                        <div>
+                            <h2 class="primary-t ">
+                                Spoons: <span id="howManySpoons2">0</span><span>
+                                    <h2>
+                        </div>
+                    </div>
+                </div>
+
                 <!--THE SPOON-->
                 <div class="row d-flex align-items-center">
                     <div class="col d-flex justify-content-center">
-                        <div class="click-item m-5 d-flex justify-content-center" id="spoonType">
+                        <div class="click-item m-4 d-flex justify-content-center" id="spoonType">
                             <img class="spoon" src="assets\spoon-click-plastic.png" onclick="spoonCount()"
                                 id="theSpoon">
                         </div>
@@ -144,6 +155,9 @@
                                         id="spoonLevelCost">1000</span></button>
                             </div>
                         </div>
+                        <div class="pt-3">
+                            <span><strong>increases each spoon's value</strong></span>
+                        </div>
                     </div>
 
                     <!--SPOON GRAB-->
@@ -157,6 +171,9 @@
                                 <button class="button" onclick="spoonGrab()"><b>UPGRADE</b><br>$<span
                                         id="spoonGrabPowerCost">10</span></button>
                             </div>
+                        </div>
+                        <div class="pt-3">
+                            <span><strong>increases spoons per click</strong></span>
                         </div>
                     </div>
 
@@ -172,6 +189,9 @@
                                         id="spoonMakersCost">100</span></button>
                             </div>
                         </div>
+                        <div class="pt-3">
+                            <span><strong>create spoons automatically</strong></span>
+                        </div>
                     </div>
 
                     <!--SPOON FACTORIES-->
@@ -185,6 +205,9 @@
                                 <button class="button" onclick="makeSpoonFactory()"><b>UPGRADE</b><br>$<span
                                         id="spoonFactoriesCost">1000</span></button>
                             </div>
+                        </div>
+                        <div class="pt-3">
+                            <span><strong>increase automatic production</strong></span>
                         </div>
                     </div>
                 </div>
@@ -225,7 +248,7 @@
             </div>
             <div class="col d-flex justify-content-center">
                 <div class="the-fork m-5 d-flex justify-content-center " id="">
-                    <img class="" src="assets\the-damn-fork.png">
+                    <img class="" src="assets\fork-soup.png">
                 </div>
             </div>
         </div>
