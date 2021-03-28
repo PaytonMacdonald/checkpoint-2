@@ -116,10 +116,10 @@ footer{
 /* the meme */
 
 .big-big{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 .big-small{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .gonzo{
     display:none;
@@ -150,12 +150,11 @@ footer{
 }
 
 .moon-spot{
-    width: 25rem;
+    width: 28rem;
     cursor: pointer;
 }
 .spoon-spot{
-    width: 20rem;
-    cursor: pointer;
+    width: 15rem;
 }
 .moon-dance{
     animation: moonWobble 45s;
