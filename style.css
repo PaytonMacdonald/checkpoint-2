@@ -10,6 +10,9 @@
 .primary-b{
     background-color: var(--color2);
 }
+.primary-b2{
+    background-color: var(--color1);
+}
 .primary-t{
     color: var(--color1);
 }
@@ -18,6 +21,15 @@
 }
 .secondary-t2{
     color: var(--color5);
+}
+.grey-t{
+    color: var(--color6)
+}
+.red{
+    color: #E4002B;
+}
+.green{
+    color: #00ad43;
 }
 
 body {
@@ -57,6 +69,7 @@ footer{
 .button{
     width: 10rem;
     border: none;
+    border-radius: 5px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
@@ -65,10 +78,39 @@ footer{
     background-color: var(--color4);
     color: white;
 }
+.button:hover{
+    background-color: #ffaa0d;
+}
+.button:active{
+    background-color: #f09c00;
+}
+.button2{
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    background-color: var(--color2);
+    color: var(--color5);
+}
+.button2:hover{
+    background-color: var(--color1);
+}
+.button2:active{
+    background-color: (var(--color2));
+}
 
 .click-item{
     width: 100px;
     height: 400px;
+    
+}
+.the-fork{
+    width: 150px;
+    height: 600px;
     
 }
 
@@ -137,7 +179,6 @@ footer{
     left: 25%;
     bottom: 42%;
     right: 25%;
-
 }
 .little-lower{
     position: fixed;
@@ -155,7 +196,7 @@ footer{
 }
 
 .spoon-spot{
-    width: 15rem;
+    width: 12rem;
 }
 
 .moon-dance{
@@ -164,29 +205,40 @@ footer{
     animation-timing-function: linear;
 }
 
+
+
+
 .woosh-appear {
-    animation: wooshAppear 3s ease-out forwards;
+    animation: wooshAppear 5s ease-out forwards;
 }
-
-
-
 .appearClick {
-    animation: appearClick 7s ease-out forwards;
+    animation: appearClick 3s ease-out forwards;
+}
+.spoon-words-show{
+    animation: appear2 6s linear forwards;
 }
 
 
+.way-down{
+    padding: fixed;
+    top: 100%;
+    bottom: 0%;
+}
 
 .appear {
     animation: appear 10s linear forwards;
 }
-.spoon-words-show{
-    animation: appear2 4.5s linear forwards;
+.appear2 {
+    animation: appearHalf 10s linear forwards;
 }
 .moon-gone {
         animation: moonGone 1.5s linear forwards;
 }
 .slow-gone {
         animation: slowGone 10s linear forwards;
+}
+.market-appear {
+        animation: appearMarket 1s linear forwards;
 }
 
 
@@ -217,6 +269,23 @@ footer{
         }
         100%{
             opacity: 100%;
+        }
+}
+@keyframes appearHalf {
+        0% {
+            opacity: 0%;
+        }
+        40%{
+            opacity: 0%;
+        }
+        50%{
+            opacity: 100%;
+        }
+        90%{
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
         }
 }
 @keyframes appear2 {
@@ -267,6 +336,7 @@ footer{
             transform: scale(1); 
         }
 }
+
 @keyframes appearSpoon {
     0% {
             top: -500px;
@@ -284,6 +354,14 @@ footer{
         }
 }
 
+@keyframes appearMarket {
+    0% {
+        opacity: 0%; 
+        }
+    100% {
+        opacity: 100%; 
+        }
+}
 
 @keyframes spoonWobble {
 
@@ -294,6 +372,7 @@ footer{
   100% {top: 2px; transform: rotate(2deg);}
 
 }
+
 @keyframes moonWobble {
 
   0% {transform: rotate(0deg);}
@@ -301,7 +380,6 @@ footer{
   100% {transform: rotate(360deg);}
 
 }
-
 
 @keyframes moonGone {
         0% {
@@ -311,6 +389,7 @@ footer{
             opacity: 0%;
         }
 }
+
 @keyframes slowGone {
         0% {
             opacity: 100%;

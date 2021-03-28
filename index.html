@@ -20,41 +20,43 @@
     <!---------------------------------------------------------------------------------------->
 
     <!--OPERATION MOON RUSE-->
+    <div class="gonzo" id="removeMoon">
 
-    <div class="container fixed-place" id="moon">
-        <div class="row">
-            <div class="col space-title-font d-flex flex-column align-items-center">
-                <h1 class="big-big card secondary-t2 p-2 primary-b">MOON MINER</h1>
-                <img class="moon-spot moon-dance" src="assets\fake-moon.png"
-                    onclick="showtime(); moonGone(); spoonShow(); play0(); finalFlavor()">
+        <div class="container fixed-place" id="moon">
+            <div class="row">
+                <div class="col space-title-font d-flex flex-column align-items-center">
+                    <h1 class="big-big card secondary-t2 p-2 primary-b">MOON MINER</h1>
+                    <img class="moon-spot moon-dance" src="assets\fake-moon.png"
+                        onclick="showtime(); moonGone(); spoonShow(); play0(); finalFlavor(); removeMoon()">
 
-                <h2 class="card secondary-t2 p-2 primary-b">click the moon!</h2>
+                    <h2 class="card secondary-t2 p-2 primary-b mt-2">click the moon!</h2>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <div class="container fixed-place gonzo slow-gone" id="spoonMoon">
-        <div class="row space-title-font d-flex flex-column align-items-center">
-            <div class="col d-flex flex-column align-items-center mb-2">
-                <h1 class="big-big card secondary-t2 p-2 primary-b spoon-words-show">SPOON MINER</h1>
-            </div>
-            <div class="col d-flex flex-column align-items-center">
-                <img class="spoon-spot woosh-appear" src="assets\spoon-click-plastic.png">
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container little-lower gonzo slow-gone" id="clickTheSpoon">
-        <div class="row space-title-font d-flex flex-column align-items-center">
-            <div class="col d-flex flex-column align-items-center">
-                <h1 class="secondary-t2 appearClick card p-2 primary-b"> CLICK THE SPOON </h1>
+        <div class="container fixed-place gonzo slow-gone" id="spoonMoon">
+            <div class="row space-title-font d-flex flex-column align-items-center">
+                <div class="col d-flex flex-column align-items-center mb-2">
+                    <h1 class="big-big card secondary-t2 p-2 primary-b spoon-words-show">SPOON MINER!</h1>
+                </div>
+                <div class="col d-flex flex-column align-items-center">
+                    <img class="spoon-spot woosh-appear" src="assets\spoon-click-plastic.png">
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="gonzo" id="totalGame">
+
+        <div class="container little-lower gonzo slow-gone" id="clickTheSpoon">
+            <div class="row space-title-font d-flex flex-column align-items-center">
+                <div class="col d-flex flex-column align-items-center">
+                    <h1 class="secondary-t2 appearClick card p-2 primary-b"> or is it... </h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="" id="totalGame">
 
         <header>
             <!--NAVBAR-->
@@ -63,7 +65,7 @@
                     <div class="col shadow space-title-font p-4">
                         <h1 class="">SPOON MINER</h1>
                         <div class="secondary-t2">
-                            <span>see you spoon</span>
+                            <span>Master-class Spoon Clicking Game</span>
                         </div>
                     </div>
                 </div>
@@ -83,8 +85,38 @@
                     </div>
                 </div>
 
+
+
+
+
+
+                <!--SPOON MARKET-->
+                <div class="row pb-3 d-flex flex-column align-items-center space-title-font">
+                    <div class="col text-center pb-3">
+                        <h4>Market Value</h4>
+                    </div>
+                    <div class="col text-center secondary-t">
+                        <h2>
+                            <span id="marketPrice"><span>$1.00</span></span>
+                            <span id="marketPriceIcon">
+                                <i class="grey-t fas fa-minus"></i>
+                            </span>
+                        </h2>
+                    </div>
+                </div>
+
+                <!--SELL SPOONS-->
+                <div class="row pb-3">
+                    <div class="col d-flex justify-content-center space-title-font">
+                        <button class="button2" onclick="sellSpoons()">SELL SPOONS</button>
+                    </div>
+                </div>
+
+
+
+
                 <!--SPOON COUNT and MONEY-->
-                <div class="row pt-3">
+                <div class="row pb-3">
                     <div class="col d-flex justify-content-center space-title-font">
                         <div>
                             <span>
@@ -94,17 +126,8 @@
                         </div>
                     </div>
                 </div>
-                <!--SELL SPOONS-->
-                <div class="row pb-3">
-                    <div class="col d-flex justify-content-center space-title-font">
-                        <button class="button" onclick="sellSpoons()">SELL SPOONS</button>
-                    </div>
-                </div>
-                <div class="row pb-3">
-                    <div class="col d-flex justify-content-center space-title-font">
-                        <span>Spoon Market Value | </span>$<span id="marketPrice">1</span>.00<span></span>
-                    </div>
-                </div>
+
+
 
                 <!--THE BUTTONS-->
                 <div class="row pb-5 pt-3 bg-light">
@@ -130,8 +153,10 @@
                             <span class="secondary-t py-2">spoon grab</span><span class="primary-t"></span>
                             <h2 id="spoonGrabPower">1</h2>
                             </span>
-                            <button class="button" onclick="spoonGrab()"><b>UPGRADE</b><br>$<span
-                                    id="spoonGrabPowerCost">10</span></button>
+                            <div id="spoonGrabDrawMax">
+                                <button class="button" onclick="spoonGrab()"><b>UPGRADE</b><br>$<span
+                                        id="spoonGrabPowerCost">10</span></button>
+                            </div>
                         </div>
                     </div>
 
@@ -142,8 +167,10 @@
                             <span class="secondary-t py-2">spoon makers</span><span class="primary-t">
                                 <h2 id="spoonMakers">0</h2>
                             </span>
-                            <button class="button" onclick="makeSpoonBot()"><b>UPGRADE</b><br>$<span
-                                    id="spoonMakersCost">100</span></button>
+                            <div id="spoonMakersDrawMax">
+                                <button class="button" onclick="makeSpoonBot()"><b>UPGRADE</b><br>$<span
+                                        id="spoonMakersCost">100</span></button>
+                            </div>
                         </div>
                     </div>
 
@@ -162,10 +189,18 @@
                     </div>
                 </div>
             </div>
+            <div id="perfectButton">
+
+            </div>
         </main>
 
         <footer>
             <div class="container-fluid">
+                <div class="row text-white py-2">
+                    <div class="col secondary-t2 text-center">
+                        <span>see you spoon</span>
+                    </div>
+                </div>
                 <div class="row text-white py-2">
                     <div class="col secondary-t2 text-center">
                         <button class="m-2" onclick="play0()">Play: Sweet Victory</button>
@@ -177,6 +212,23 @@
             </div>
         </footer>
 
+    </div>
+
+
+
+
+
+    <div class="container bg-white py-5 gonzo" id="endGame">
+        <div class="row d-flex flex-column align-items-center">
+            <div class="col appear2 text-center">
+                <h2>You fool.</h2>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="the-fork m-5 d-flex justify-content-center " id="">
+                    <img class="" src="assets\the-damn-fork.png">
+                </div>
+            </div>
+        </div>
     </div>
     <!---------------------------------------------------------------------------------------->
     <script src="app.js"></script>
