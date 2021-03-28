@@ -1,0 +1,322 @@
+:root {
+    --color1: #024089;
+    --color2: #004da9;
+    --color3: #fa8f1a;
+    --color4: #fda300;
+    --color5: #ffc619;
+    --color6: #e1e3e7;
+}
+
+.primary-b{
+    background-color: var(--color2);
+}
+.primary-t{
+    color: var(--color1);
+}
+.secondary-t{
+    color: var(--color3);
+}
+.secondary-t2{
+    color: var(--color5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.space-background{
+    background-image: url(./assets/space-background-tall.jpg);
+}
+
+main{
+    flex-grow: 1;
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--color1);
+}
+
+footer{
+    background-color: var(--color2);
+}
+
+.space-title-font {
+    font-family: 'Righteous', cursive;
+}
+
+.button{
+    width: 10rem;
+    border: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    background-color: var(--color4);
+    color: white;
+}
+
+.click-item{
+    width: 100px;
+    height: 400px;
+    
+}
+
+.spoon{
+    width: 95px;
+    height: 395px;
+    cursor: pointer;
+    position: relative;
+    animation: spoonWobble 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.spoon:active{
+    width: 99px;
+    height: 399px;
+}
+
+
+
+/* animation */
+
+
+
+
+
+
+/*SCREEN SIZINGS*/
+
+@media only screen and (min-width:1500px){
+    body {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        
+    }
+}
+@media only screen and (min-width:1000px){
+    body {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+    }
+}
+
+
+/* the meme */
+
+.big-big{
+    font-size: 3rem;
+}
+.big-small{
+    font-size: 1rem;
+}
+.gonzo{
+    display:none;
+}
+.half-gonzo {
+    opacity: 100%;
+}
+.visable{
+    display: block;
+}
+.fixed-place{
+    position: fixed;
+    width: 50vw;
+    top: 8%;
+    left: 25%;
+    bottom: 42%;
+    right: 25%;
+
+}
+.little-lower{
+    position: fixed;
+    width: 50vw;
+    top: 65%;
+    left: 25%;
+    bottom: 0%;
+    right: 25%;
+
+}
+
+.moon-spot{
+    width: 25rem;
+    cursor: pointer;
+}
+.spoon-spot{
+    width: 20rem;
+    cursor: pointer;
+}
+.moon-dance{
+    animation: moonWobble 45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.woosh-appear {
+    animation: wooshAppear 3s ease-out forwards;
+}
+
+
+
+.appearClick {
+    animation: appearClick 7s ease-out forwards;
+}
+
+
+
+.appear {
+    animation: appear 10s linear forwards;
+}
+.spoon-words-show{
+    animation: appear2 4.5s linear forwards;
+}
+.moon-gone {
+        animation: moonGone 1.5s linear forwards;
+}
+.slow-gone {
+        animation: slowGone 10s linear forwards;
+}
+
+
+@keyframes wooshAppear {
+
+    0% {
+            top: -500px;
+            right: -500px; 
+            transform: scale(0) rotate(45deg); 
+        }
+    80% {
+            top: -500px;
+            right: -500px; 
+            transform: scale(0) rotate(45deg); 
+        }
+        100%{
+            top: 0px; 
+            right: 0px;
+            transform: scale(1) rotate(0deg); 
+        }
+}
+@keyframes appear {
+        0% {
+            opacity: 0%;
+        }
+        80%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+}
+@keyframes appear2 {
+    0% {
+            top: -500px;
+            transform: scale(0); 
+        }
+    80% {
+        top: -500px;
+        
+        transform: scale(0); 
+        }
+        100%{
+            top: 0px; 
+            right: 0px;
+            transform: scale(1); 
+        }
+}
+@keyframes appearClick {
+    0% {
+            top: -500px;
+            transform: scale(0); 
+        }
+    80% {
+        top: -500px;
+        
+        transform: scale(0); 
+        }
+        100%{
+            top: 0px; 
+            right: 0px;
+            transform: scale(1); 
+        }
+}
+@keyframes appearThe {
+    0% {
+            top: -500px;
+            transform: scale(0); 
+        }
+    80% {
+        top: -500px;
+        
+        transform: scale(0); 
+        }
+        100%{
+            top: 0px; 
+            right: 0px;
+            transform: scale(1); 
+        }
+}
+@keyframes appearSpoon {
+    0% {
+            top: -500px;
+            transform: scale(0); 
+        }
+    80% {
+        top: -500px;
+        
+        transform: scale(0); 
+        }
+        100%{
+            top: 0px; 
+            right: 0px;
+            transform: scale(1); 
+        }
+}
+
+
+@keyframes spoonWobble {
+
+  0% {top: 2px; transform: rotate(2deg);}
+  25% {top: -2px;}
+  50% {top: 2px; transform: rotate(-2deg);}
+  75% {top: -2px;}
+  100% {top: 2px; transform: rotate(2deg);}
+
+}
+@keyframes moonWobble {
+
+  0% {transform: rotate(0deg);}
+
+  100% {transform: rotate(360deg);}
+
+}
+
+
+@keyframes moonGone {
+        0% {
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
+        }
+}
+@keyframes slowGone {
+        0% {
+            opacity: 100%;
+        }
+        80% {
+            opacity: 100%;
+        }
+        100%{
+            opacity: 0%;
+        }
+}
