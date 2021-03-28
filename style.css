@@ -157,11 +157,13 @@ footer{
 .spoon-spot{
     width: 15rem;
 }
+
 .moon-dance{
     animation: moonWobble 45s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 .woosh-appear {
     animation: wooshAppear 3s ease-out forwards;
 }
