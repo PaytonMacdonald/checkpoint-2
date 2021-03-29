@@ -1,3 +1,4 @@
+/*root files*/
 :root {
     --color1: #024089;
     --color2: #004da9;
@@ -6,6 +7,32 @@
     --color5: #ffc619;
     --color6: #e1e3e7;
 }
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+    background-color: white;
+}
+header{
+    background-color: var(--color1);
+}
+footer{
+    background-color: var(--color2);
+}
+
+
+
+/*colors*/
 
 .primary-b{
     background-color: var(--color2);
@@ -32,39 +59,17 @@
     color: #00ad43;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
+/*custon assets*/
+
 .space-background{
     background-image: url(./assets/space-background-tall.jpg);
 }
-
-main{
-    flex-grow: 1;
-    background-color: white;
-}
-
-h1,h2,h3,h4,h5,h6{
-    padding: 0;
-    margin: 0;
-}
-
-header{
-    background-color: var(--color1);
-}
-
-footer{
-    background-color: var(--color2);
-}
-
 .space-title-font {
     font-family: 'Righteous', cursive;
 }
+
+
+/*buttons*/
 
 .button{
     width: 10rem;
@@ -103,6 +108,8 @@ footer{
     background-color: (var(--color2));
 }
 
+/*utensils*/
+
 .click-item{
     width: 100px;
     height: 400px;
@@ -113,7 +120,6 @@ footer{
     height: 600px;
     
 }
-
 .spoon{
     width: 95px;
     height: 395px;
@@ -130,29 +136,12 @@ footer{
 
 
 
-/* animation */
 
 
 
 
 
 
-/*SCREEN SIZINGS*/
-
-@media only screen and (min-width:1500px){
-    body {
-        margin-left: 15vw;
-        margin-right: 15vw;
-        
-    }
-}
-@media only screen and (min-width:1000px){
-    body {
-        margin-left: 10vw;
-        margin-right: 10vw;
-        
-    }
-}
 
 
 /* the meme */
@@ -187,27 +176,24 @@ footer{
     left: 25%;
     bottom: 0%;
     right: 25%;
-
+    
 }
-
 .moon-spot{
     width: 300px;
     cursor: pointer;
 }
-
 .spoon-spot{
     width: 150px;
 }
+
+
+/* animation */
 
 .moon-dance{
     animation: moonWobble 45s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
-
-
-
 .woosh-appear {
     animation: wooshAppear 5s ease-out forwards;
 }
@@ -217,14 +203,11 @@ footer{
 .spoon-words-show{
     animation: appear2 6s linear forwards;
 }
-
-
 .way-down{
     padding: fixed;
     top: 100%;
     bottom: 0%;
 }
-
 .appear {
     animation: appear 10s linear forwards;
 }
@@ -232,172 +215,183 @@ footer{
     animation: appearHalf 10s linear forwards;
 }
 .moon-gone {
-        animation: moonGone 1.5s linear forwards;
+    animation: moonGone 1.5s linear forwards;
 }
 .slow-gone {
-        animation: slowGone 10s linear forwards;
+    animation: slowGone 10s linear forwards;
 }
 .market-appear {
-        animation: appearMarket 1s linear forwards;
+    animation: appearMarket 1s linear forwards;
 }
 
 
+/*keyframes*/
 @keyframes wooshAppear {
-
     0% {
-            top: -500px;
-            right: -500px; 
-            transform: scale(0) rotate(45deg); 
-        }
+        top: -500px;
+        right: -500px; 
+        transform: scale(0) rotate(45deg); 
+    }
     80% {
-            top: -500px;
-            right: -500px; 
-            transform: scale(0) rotate(45deg); 
-        }
-        100%{
-            top: 0px; 
-            right: 0px;
-            transform: scale(1) rotate(0deg); 
-        }
+        top: -500px;
+        right: -500px; 
+        transform: scale(0) rotate(45deg); 
+    }
+    100%{
+        top: 0px; 
+        right: 0px;
+        transform: scale(1) rotate(0deg); 
+    }
 }
 @keyframes appear {
-        0% {
-            opacity: 0%;
-        }
-        80%{
-            opacity: 0%;
-        }
-        100%{
-            opacity: 100%;
-        }
+    0% {
+        opacity: 0%;
+    }
+    80%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 @keyframes appearHalf {
-        0% {
-            opacity: 0%;
-        }
-        40%{
-            opacity: 0%;
-        }
-        50%{
-            opacity: 100%;
-        }
-        90%{
-            opacity: 100%;
-        }
-        100%{
-            opacity: 0%;
-        }
+    0% {
+        opacity: 0%;
+    }
+    40%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    90%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
 }
 @keyframes appear2 {
     0% {
-            top: -500px;
-            transform: scale(0); 
-        }
+        top: -500px;
+        transform: scale(0); 
+    }
     80% {
         top: -500px;
         
         transform: scale(0); 
-        }
-        100%{
-            top: 0px; 
-            right: 0px;
-            transform: scale(1); 
-        }
+    }
+    100%{
+        top: 0px; 
+        right: 0px;
+        transform: scale(1); 
+    }
 }
 @keyframes appearClick {
     0% {
-            top: -500px;
-            transform: scale(0); 
-        }
+        top: -500px;
+        transform: scale(0); 
+    }
     80% {
         top: -500px;
         
         transform: scale(0); 
-        }
-        100%{
-            top: 0px; 
-            right: 0px;
-            transform: scale(1); 
-        }
+    }
+    100%{
+        top: 0px; 
+        right: 0px;
+        transform: scale(1); 
+    }
 }
 @keyframes appearThe {
     0% {
-            top: -500px;
-            transform: scale(0); 
-        }
+        top: -500px;
+        transform: scale(0); 
+    }
     80% {
         top: -500px;
         
         transform: scale(0); 
-        }
-        100%{
-            top: 0px; 
-            right: 0px;
-            transform: scale(1); 
-        }
+    }
+    100%{
+        top: 0px; 
+        right: 0px;
+        transform: scale(1); 
+    }
 }
-
 @keyframes appearSpoon {
     0% {
-            top: -500px;
-            transform: scale(0); 
-        }
+        top: -500px;
+        transform: scale(0); 
+    }
     80% {
         top: -500px;
         
         transform: scale(0); 
-        }
-        100%{
-            top: 0px; 
-            right: 0px;
-            transform: scale(1); 
-        }
+    }
+    100%{
+        top: 0px; 
+        right: 0px;
+        transform: scale(1); 
+    }
 }
-
 @keyframes appearMarket {
     0% {
         opacity: 0%; 
-        }
+    }
     100% {
         opacity: 100%; 
-        }
+    }
 }
-
 @keyframes spoonWobble {
-
-  0% {top: 2px; transform: rotate(2deg);}
-  25% {top: -2px;}
-  50% {top: 2px; transform: rotate(-2deg);}
-  75% {top: -2px;}
-  100% {top: 2px; transform: rotate(2deg);}
-
+    
+    0% {top: 2px; transform: rotate(2deg);}
+    25% {top: -2px;}
+    50% {top: 2px; transform: rotate(-2deg);}
+    75% {top: -2px;}
+    100% {top: 2px; transform: rotate(2deg);}
+    
 }
-
 @keyframes moonWobble {
-
-  0% {transform: rotate(0deg);}
-
-  100% {transform: rotate(360deg);}
-
+    
+    0% {transform: rotate(0deg);}
+    
+    100% {transform: rotate(360deg);}
+    
 }
-
 @keyframes moonGone {
-        0% {
-            opacity: 100%;
-        }
-        100%{
-            opacity: 0%;
-        }
+    0% {
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes slowGone {
+    0% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
 }
 
-@keyframes slowGone {
-        0% {
-            opacity: 100%;
-        }
-        80% {
-            opacity: 100%;
-        }
-        100%{
-            opacity: 0%;
-        }
+
+/*SCREEN SIZINGS*/
+@media only screen and (min-width:1500px){
+    body {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        
+    }
+}
+@media only screen and (min-width:1000px){
+    body {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        
+    }
 }

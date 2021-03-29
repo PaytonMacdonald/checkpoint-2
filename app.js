@@ -97,11 +97,6 @@ function makeSpoonFactory() {
 let autoSpoon = setInterval(function autoMake() {
     spoons += spoonMakers; spoonDraw(); spoonDraw2()
 }, time)
-
-
-
-
-
 let marketTimer = setInterval(
     function marketNum() {
         let marketRNG = Math.floor((Math.random() * 7) + 1);
@@ -111,11 +106,6 @@ let marketTimer = setInterval(
         marketPrice = marketRNG
         marketPriceDraw()
     }, 3000)
-
-
-
-
-
 
 //DRAW FUNCTIONS
 function spoonDraw() {
@@ -127,11 +117,6 @@ function spoonDraw2() {
 function sellDraw() {
     document.getElementById('money').innerText = `$${money}`
 }
-
-
-
-
-
 function spoonGrabDraw() {
     document.getElementById('spoonGrabPower').innerText = `${spoonGrabPower}`
 }
@@ -141,18 +126,12 @@ function spoonGrabDrawCost() {
 function spoonGrabDrawMax() {
     document.getElementById('spoonGrabDrawMax').innerHTML = `<button class="button"><b>UPGRADE</b><br><span>MAX</span></button>`
 }
-
-
-
-
-
 function spoonUpgradeDraw() {
     document.getElementById('spoonLevel').innerText = `${spoonLevel}`
 }
 function spoonUpgradeDrawCost() {
     document.getElementById('spoonLevelCost').innerText = `${spoonCost}`
 }
-
 function spoonTypeDraw() {
     if (spoonLevel == 2) {
         document.getElementById('spoonType').innerHTML = `<img class="spoon" src="./assets/spoon-click-wood.png" onclick="spoonCount()">`
@@ -175,11 +154,6 @@ function spoonMaxDraw() {
 function perfectSpoonDraw() {
     document.getElementById('perfectButton').innerHTML = `<div class="row py-4 d-flex flex-column align-items-center"><div class="col-3 d-flex flex-column align-items-center card shadow secondary-t2 primary-b py-2"><h6>the final upgrade</h6><button class="button" onclick="endGame()">ALL YOUR MONEY</button></div></div>`
 }
-
-
-
-
-
 function spoonMakersDraw() {
     document.getElementById('spoonMakers').innerText = `${spoonMakers}`
 }
