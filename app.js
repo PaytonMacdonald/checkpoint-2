@@ -8,7 +8,7 @@ let time = 2000
 
 let marketPrice = 1
 
-let money = 0
+let money = 100000000000000000
 let grabCost = 10
 let spoonCost = 1000
 let makerCost = 100
